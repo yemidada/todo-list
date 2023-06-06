@@ -40,9 +40,11 @@
 
 The various stacks used for the project includes the following
 <details>
-  <summary>HTMl</summary>
+  <summary>HTML</summary>
 </details>
-
+<details>
+  <summary>Javascript</summary>
+</details>
 <details>
   <summary>CSS</summary>
 </details>
