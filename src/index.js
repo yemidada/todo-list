@@ -1,7 +1,6 @@
 import './style.css';
 import todoList from './modules/todo.js';
-
-const divList = window.document.getElementById('todo_list');
+import divList from './modules/dom.js';
 
 const onLoad = () => {
   for (let i = 0; i < todoList.length; i += 1) {
@@ -16,6 +15,4 @@ const onLoad = () => {
     }
   }
 };
-document.addEventListener('DOMContentLoaded', () => {
-  onLoad();
-}, false);
+window.onload = onLoad();
