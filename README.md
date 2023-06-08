@@ -2,7 +2,7 @@
 
 
 <div align="center">
-  <h3><b>To Do list: list structure</b></h3>
+  <h3><b>To Do list: add & remove</b></h3>
 
 </div>
 
@@ -25,9 +25,9 @@
 - [📝 License](#license)
 
 
-# 📖 To Do list: list structure <a name="about-project"></a>
+# 📖 To Do list: add & remove <a name="about-project"></a>
 
-**In this project, I will build a simple HTML list of To Do tasks. The list will be styled according to the specifications listed later in this lesson. This simple web page will be built using webpack and served by a webpack dev server.**
+**In this project, I will implement the CRUD (create, read, update, delete) methods. All the elements of the user interface will be fully functional and your application will be completed.**
 
 
 ## 🛠 Built With <a name="built-with"></a>
@@ -56,9 +56,10 @@ The various stacks used for the project includes the following
     
     
 
-- **Use webpack to bundle JavaScript.**
-- **Learn how to use proper ES6 syntax.**
-- **Use ES6 modules to write modular JavaScript.**
+- **Create a new JavaScript file for the new functionality**
+- **Implement a function for adding a new task (add a new element to the array).**
+- **Implement a function for deleting a task (remove an element from the array).**
+- **Implement a function for editing task descriptions.**
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
