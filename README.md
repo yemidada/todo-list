@@ -2,7 +2,7 @@
 
 
 <div align="center">
-  <h3><b>To Do list: list structure</b></h3>
+  <h3><b>To Do list: interactive list</b></h3>
 
 </div>
 
@@ -25,9 +25,9 @@
 - [📝 License](#license)
 
 
-# 📖 To Do list: list structure <a name="about-project"></a>
+# 📖 To Do list: interactive list <a name="about-project"></a>
 
-**In this project, I will build a simple HTML list of To Do tasks. The list will be styled according to the specifications listed later in this lesson. This simple web page will be built using webpack and served by a webpack dev server.**
+**In this project, yIou will add some functionality to your application to make it interactive. The user will also be able to mark task completion by selecting the corresponding checkbox (or undo it by unchecking the checkbox). The updated tasks list will be stored in local storage.**
 
 
 ## 🛠 Built With <a name="built-with"></a>
@@ -56,9 +56,11 @@ The various stacks used for the project includes the following
     
     
 
-- **Use webpack to bundle JavaScript.**
-- **Learn how to use proper ES6 syntax.**
-- **Use ES6 modules to write modular JavaScript.**
+- **Create a new JavaScript file for the new functionality**
+- **Implement a function for adding a new task (add a new element to the array).**
+- **Implement a function for deleting a task (remove an element from the array).**
+- **Implement a function for editing task descriptions.**
+- **Add event listener to the checkbox (change).**
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
