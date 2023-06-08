@@ -9,11 +9,15 @@ import {
   loadData,
 } from './store_locally.js';
 
+import {
+  updateCompleteStatus,
+  deleteAllCompleted,
+} from './complete_status.js';
+
 import onRefresh from './refresh.js';
 
 class TodoList {
   constructor() {
-    this.storage = 'todo11e';
     this.selected_item = null;
     this.newListBook = {};
     this.todo_list = loadData();
@@ -28,8 +32,8 @@ class TodoList {
         const todo = this.todo_list[i];
         html += '<li class="my_list">';
         html += `<div class="content">
-        <span class="checkbox" ><input type="checkbox" /></span>
-                  <span class="info">${todo.description}</span>
+        <span class="checkbox" ><input class="check_status" ${todo.completed ? 'checked' : ''} data-position="${todo.position}" type="checkbox" /></span>
+                  <span ${todo.completed ? ' class="info line_thr"' : 'class="info"'} >${todo.description}</span>
                   <input class="edit_description" data-position="${todo.position}" value="${todo.description}" />
                 </div>`;
         html += `<div class="delete_todo" >
@@ -77,6 +81,8 @@ class TodoList {
     const selectedList = document.querySelectorAll('.info');
     const deleteTodo = document.querySelectorAll('.delete_icon');
     const editDescription = document.querySelectorAll('.edit_description');
+    const checkStatus = document.querySelectorAll('.check_status');
+    const button = document.querySelector('.clear-button');
 
     onRefresh();
 
@@ -132,6 +138,29 @@ class TodoList {
         event.target.parentNode.parentNode.children[1].children[0].classList.add('show');
         event.target.parentNode.parentNode.children[1].children[1].classList.add('hide');
       });
+    });
+
+    for (let i = 0; i < checkStatus.length; i += 1) {
+      checkStatus[i].addEventListener('change', (event) => {
+        updateCompleteStatus(this.todo_list, checkStatus[i].checked, event.target.dataset.position);
+        const desc = checkStatus[i].parentNode.parentNode.children[1];
+        if (checkStatus[i].checked) {
+          desc.classList.add('line_thr');
+          checkStatus[i].setAttribute('checked', 'checked');
+        } else {
+          desc.classList.remove('line_thr');
+          checkStatus[i].removeAttribute('checked');
+        }
+        this.list();
+        this.setupEventListeners();
+      });
+    }
+
+    button.addEventListener('click', (e) => {
+      e.preventDefault();
+      deleteAllCompleted(this.todo_list);
+      this.list();
+      this.setupEventListeners();
     });
   }
 }

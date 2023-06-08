@@ -139,6 +139,8 @@ ul li {
   text-align: center;
   border: none;
   color: #949494;
+  cursor: pointer;
+  font-size: 18px;
 }
 
 .cursor_dragger {
@@ -147,4 +149,9 @@ ul li {
 
 .cursor_pointer {
   cursor: pointer;
+}
+
+.line_thr {
+  text-decoration: line-through;
+  color: #999;
 }
