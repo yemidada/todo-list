@@ -14,18 +14,22 @@
 
     <main class="main-section">
         <div class="container">
-            <ul id="todo_list">
+            <ul>
                 <li>
                     <div class="title">
                         <span>Today's Todo</span>
-                        <span class="refresh"><i class="fa-solid fa-rotate"></i></span>
+                        <span class="cursor_pointer refresh"><i class="fa-solid fa-rotate"></i></span>
                     </div>
                 </li>
                 <li class="add-todo-action">
-                    <input type="text" placeholder="Add to your list..." class="add-todo" />
+                    <input type="text" id="description" placeholder="Add to your list..." />
+                    <button class="todo-button"><i class="fa-solid fa-arrow-left"></i></button>
                 </li>
             </ul>
-            <button class="todo-button">Clear all completed</button>
+            <ul id="todo_list">
+
+            </ul>
+            <button class="clear-button">Clear all completed</button>
         </div>
     </main>
 
