@@ -63,7 +63,7 @@ The various stacks used for the project includes the following
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://yemidada.github.io/desktop-version-portfolio/)
+- [Live Demo Link](https://yemidada.github.io/todo-list/dist/)
 
 
 ## 💻 Getting Started <a name="getting-started"></a>
