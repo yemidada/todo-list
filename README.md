@@ -13,6 +13,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+    - [🚀 Live Demo](#live-demo)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
   - [Usage](#usage)
@@ -52,9 +53,6 @@ The various stacks used for the project includes the following
 
 ### Key Features <a name="key-features"></a>
 
-    
-    
-    
 
 - **Create a new JavaScript file for the new functionality**
 - **Implement a function for adding a new task (add a new element to the array).**
@@ -62,6 +60,10 @@ The various stacks used for the project includes the following
 - **Implement a function for editing task descriptions.**
 - **Add event listener to the checkbox (change).**
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link](https://yemidada.github.io/todo-list/dist/)
 
 
 ## 💻 Getting Started <a name="getting-started"></a>
